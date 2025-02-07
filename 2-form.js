@@ -1,2 +1,2 @@
-import"./assets/modulepreload-polyfill-B5Qt9EMX.js";/* empty css                      */console.log("guten tag");
+import"./assets/modulepreload-polyfill-B5Qt9EMX.js";/* empty css                      */const a=document.querySelector(".feedback-form"),t={email:"",message:""},o="feedback-form-state";a.addEventListener("input",e=>{t[e.target.name]=e.target.value,localStorage.setItem(o,JSON.stringify(t))});document.addEventListener("DOMContentLoaded",()=>{const e=localStorage.getItem(o);e&&(Object.assign(t,JSON.parse(e)),a.email.value=t.email,a.message.value=t.message)});
 //# sourceMappingURL=2-form.js.map
